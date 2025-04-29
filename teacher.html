@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Teacher Dashboard</h1>
+        <h2>Mark Attendance</h2>
+
+        <div class="selection-container">
+            <div class="selection-box">
+                <label for="attendanceDate">Date:</label>
+                <input type="date" id="attendanceDate">
+            </div>
+
+            <div class="selection-box">
+                <label for="periodSelect">Period:</label>
+                <select id="periodSelect">
+                    <option value="Period 1">Period 1</option>
+                    <option value="Period 2">Period 2</option>
+                    <option value="Period 3">Period 3</option>
+                    <option value="Period 4">Period 4</option>
+                    <option value="Period 5">Period 5</option>
+                    <option value="Period 6">Period 6</option>
+                    <option value="Period 7">Period 7</option>
+                </select>
+            </div>
+
+            <div class="selection-box">
+                <label for="subjectSelect">Subject:</label>
+                <select id="subjectSelect">
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                </select>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+
+        <button onclick="submitAttendance()">Submit Attendance</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
