@@ -6,7 +6,7 @@ function goBack() {
     window.location.href = "Mainpage.html";
 }
 
-const students = ["Balaram", "Sriram", "Abhinav","Jithin","Tanoj","Sravan","Sai","Sai Kiran","Sai Teja","Krishna","Prasad","Sai Kumar","Charan","Manikanta","Sumanth","Praveen","Surya","Raghav","Rohit","Harsha","Manoj","Srinivas","Kumar"];
+const students = ["Abhijith", "Amritha", "Anbarasan","Anirudha","Rithvikesh","Jithin sai","Mounesh","Sree charan","Yashwanth","Dhanush","Karthiga","Karthikeyan","Kisoth kumar","Krishna sai","Leela vinothini","Lekshmi Nair","Logesh","Lohith","Mugesh","Nikhilesh","Bhanu prakash","Praneethwaran","Vidhushaa","Ramani","Tanoj","Reema shri","Rohith surya","rudra kumar","Abubakar","Shivakarthik","Sree nikesh","Suba sree","Tarun","Harshamithiran","Sanath","Balaram pratheek","Sravan","Yudhukrishna","Promodh","Ramya sri","Praveen","Swaraj","Nikhil reddy","Adwaith","Harshini","Sabari","Hemavathi","Imran","Akash","Abhinav","Krishanunni","Sriram","Sanskrithi krishna","Krishna vardhana","Majunu"];
 let attendanceRecords = JSON.parse(localStorage.getItem("attendanceRecords")) || [];
 let attendanceSummary = JSON.parse(localStorage.getItem("attendanceSummary")) || {};
 
